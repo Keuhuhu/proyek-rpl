@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ambil Antrian - Klinik Unsri</title>
     <link rel="stylesheet" href="ambil-antrian.css">
+    <link rel="stylesheet" href="../global.css">
+
 </head>
 <body>
     <div class="container">
@@ -76,6 +78,21 @@
     <button class="btn-generate">Generate</button>
     <p class="note">Catatan: Pastikan kamu telah berada ditempat 5 menit sebelum panggilan</p>
 </div>
+
+<div id="stickyAntrian" class="sticky-antrian" style="display: none;">
+    <div class="antrian-content">
+        <div class="antrian-left">
+            <span class="antrian-label">Nomor Antrian</span>
+            <span class="antrian-value" id="stickyNomor">--</span>
+        </div>
+        <div class="antrian-divider"></div>
+        <div class="antrian-right">
+            <span class="antrian-label">Estimasi</span>
+            <span class="antrian-value" id="stickyEstimasi">-- Menit</span>
+        </div>
+    </div>
+</div>
+
 
 <script>
     // Fungsi untuk mengubah tampilan jadi "Sudah Diambil" (Grey Box)
@@ -169,6 +186,8 @@
         }
     });
 </script>
+
+<script src="../global.js"></script>
 
 </body>
 </html>

@@ -61,7 +61,7 @@
         async function loadJadwal() {
             try {
                 // Fetch ke endpoint yang sama dengan Admin
-                const response = await fetch('/jadwal-dokter');
+                const response = await fetch('/users/jadwal-dokter');
                 const result = await response.json();
                 
                 if (result.data) {

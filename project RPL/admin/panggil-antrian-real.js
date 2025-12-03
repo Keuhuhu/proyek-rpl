@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // FUNGSI 1: Ambil Data Status Terbaru
 async function updateSemuaKartu() {
     try {
-        const response = await fetch('http://localhost:3000/antrian/status');
+        const response = await fetch('/antrian/status');
         const result = await response.json();
         const semuaAntrian = result.data;
 

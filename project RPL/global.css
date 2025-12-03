@@ -1,0 +1,19 @@
+/* Sticky Antrian Box */
+.sticky-antrian {
+    position: fixed;
+    bottom: 20px; left: 50%; transform: translateX(-50%);
+    width: 90%; max-width: 360px;
+    background-color: #8BC34A;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 9999; padding: 15px;
+    animation: slideUp 0.5s ease-out;
+    display: none; /* Default sembunyi */
+}
+/* ... (masukkan sisa CSS antrian-content, antrian-label, dll ke sini) ... */
+.antrian-content { display: flex; justify-content: space-between; align-items: center; color: white; }
+.antrian-left, .antrian-right { display: flex; flex-direction: column; align-items: center; flex: 1; }
+.antrian-label { font-size: 12px; opacity: 0.9; }
+.antrian-value { font-size: 18px; font-weight: 700; }
+.antrian-divider { width: 1px; height: 30px; background-color: rgba(255,255,255,0.3); margin: 0 10px; }
+@keyframes slideUp { from { bottom: -100px; opacity: 0; } to { bottom: 20px; opacity: 1; } }
