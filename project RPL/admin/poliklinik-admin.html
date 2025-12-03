@@ -99,7 +99,7 @@
         async function loadData() {
             try {
                 // Panggil API Backend
-                const response = await fetch('http://localhost:3000/users/jadwal-dokter');
+                const response = await fetch('/jadwal-dokter');
                 const result = await response.json();
                 
                 if (result.data) {
@@ -191,7 +191,7 @@
             });
 
             try {
-                const response = await fetch('http://localhost:3000/users/jadwal-dokter', {
+                const response = await fetch('/users/jadwal-dokter', {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(updates)

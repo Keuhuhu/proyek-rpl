@@ -49,7 +49,7 @@
         try {
             // TIP: Check if your route is under 'antrian' or 'users'. 
             // Based on previous chats, it was likely '/antrian/all-history'
-            const response = await fetch('http://localhost:3000/users/all-history', { 
+            const response = await fetch('/users/all-history', { 
                 method: 'GET',
                 headers: { 'Authorization': 'Bearer ' + token },
                 cache: 'no-store'

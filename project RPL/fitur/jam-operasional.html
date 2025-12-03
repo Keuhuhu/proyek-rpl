@@ -54,7 +54,7 @@
         async function loadJamOperasional() {
             try {
                 // Fetch data from the same API used by Admin
-                const response = await fetch('http://localhost:3000/users/jam');
+                const response = await fetch('/users/jam');
                 const result = await response.json();
                 const data = result.data;
 

@@ -51,7 +51,7 @@ function updateKartuDokter(namaDokter, dataSemua, cardId) {
 async function panggil(namaDokter) {
 
     try {
-        const response = await fetch('http://localhost:3000/antrian/next', {
+        const response = await fetch('/antrian/next', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nama_dokter: namaDokter })

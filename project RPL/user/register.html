@@ -29,7 +29,7 @@
         </div>
 
         <!-- Register Form -->
-        <form class="form" id="regform" action="http://localhost:3000/users" method="post">
+        <form class="form" id="regform" action="/users" method="post">
             <!-- User Type Selection -->
             <div class="user-type">
                 <label class="checkbox-inline">
@@ -101,7 +101,7 @@
 
         try {
             // 3. Kirim ke Backend
-            const response = await fetch('http://localhost:3000/users', {
+            const response = await fetch('/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

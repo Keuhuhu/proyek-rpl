@@ -8,7 +8,7 @@ if (!token) {
 // 1. FUNGSI LOAD DATA (Supaya form tidak kosong saat dibuka)
 async function loadEditData() {
     try {
-        const response = await fetch('http://localhost:3000/users/profile', {
+        const response = await fetch('/users/profile', {
             method: 'GET',
             headers: { 'Authorization': 'Bearer ' + token },
             cache: 'no-store'
@@ -51,7 +51,7 @@ async function saveProfile() {
     console.log("Mengirim Data:", dataBaru); // Cek di Console
 
     try {
-        const response = await fetch('http://localhost:3000/users/profile', {
+        const response = await fetch('/users/profile', {
             method: 'PUT',
             headers: {
                 'Authorization': 'Bearer ' + token,

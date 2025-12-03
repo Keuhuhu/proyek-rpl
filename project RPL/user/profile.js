@@ -19,7 +19,7 @@ async function loadProfileDisplay() {
 
     try {
         // 2. MINTA DATA KE SERVER
-        const response = await fetch('http://localhost:3000/users/profile', {
+        const response = await fetch('/users/profile', {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + token

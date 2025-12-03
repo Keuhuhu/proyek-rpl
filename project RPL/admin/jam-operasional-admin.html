@@ -50,7 +50,7 @@
         // 1. LOAD DATA SAAT HALAMAN DIBUKA
         async function loadJadwal() {
             try {
-                const response = await fetch('http://localhost:3000/users/jam'); // Sesuaikan route
+                const response = await fetch('/users/jam'); // Sesuaikan route
                 const result = await response.json();
                 
                 const data = result.data;
@@ -101,7 +101,7 @@
             });
 
             try {
-                const response = await fetch('http://localhost:3000/users/jam', {
+                const response = await fetch('/users/jam', {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(dataUpdate)

@@ -64,7 +64,7 @@
         }
 
         try {
-            const response = await fetch('http://localhost:3000/antrian/history', {
+            const response = await fetch('/antrian/history', {
                 method: 'GET',
                 headers: { 'Authorization': 'Bearer ' + token },
                 cache: 'no-store'

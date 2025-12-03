@@ -100,7 +100,7 @@
 
         try {
             // Panggil endpoint baru kita
-            const response = await fetch(`http://localhost:3000/antrian/check/${userId}`);
+            const response = await fetch(`/antrian/check/${userId}`);
             const result = await response.json();
 
             // Jika backend bilang "exists: true", langsung ubah tampilan
@@ -140,7 +140,7 @@
         // ---------------------------------------------
 
         try {
-            const response = await fetch('http://localhost:3000/antrian', {
+            const response = await fetch('/antrian', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
