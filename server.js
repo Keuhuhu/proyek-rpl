@@ -4,7 +4,7 @@ const mysql = require('mysql');
 const router = require("./routes/user_routes.js");
 const antrianRoute = require("./routes/antrian_routes.js");
 
-const port = 3000
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors());
